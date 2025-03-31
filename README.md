@@ -32,7 +32,7 @@ A web application for managing income tax records and payments. This system allo
    - Make sure MySQL server is running
    - If you encounter authentication issues, run the following SQL commands:
      ```sql
-     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Shriram@2210';
+     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'LM2005';
      FLUSH PRIVILEGES;
      ```
    - Update database connection settings in `config/db.js` if needed
