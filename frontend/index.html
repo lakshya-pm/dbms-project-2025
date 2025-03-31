@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Tax Management System</h1>
+        <p class="subtitle">Using 2025 Union Budget Tax Slabs</p>
+        
+        <div id="register-section">
+            <h2>Register</h2>
+            <input type="text" id="reg-name" placeholder="Name" required>
+            <input type="email" id="reg-email" placeholder="Email" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <select id="reg-role">
+                <option value="taxpayer">Taxpayer</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="tax-record-section" style="display:none;">
+            <h2>Add Tax Record</h2>
+            <p>Enter your annual income and we'll calculate your taxes automatically based on 2025 Union Budget tax slabs.</p>
+            <div class="info-box">
+                <p><strong>Key Features of 2025 Tax Regime:</strong></p>
+                <ul>
+                    <li>Basic exemption: ₹12 lakh</li>
+                    <li>Standard deduction: ₹75,000</li>
+                    <li>Effective tax-free income: ₹12.75 lakh</li>
+                    <li>Progressive tax slabs from 5% to 30%</li>
+                </ul>
+            </div>
+            <input type="number" id="income" placeholder="Annual Income (₹)" required>
+            <button onclick="addTaxRecord()">Calculate & Add Tax Record</button>
+        </div>
+
+        <div id="payment-section" style="display:none;">
+            <h2>Make Payment</h2>
+            <input type="number" id="payment-amount" placeholder="Payment Amount (₹)" required>
+            <button onclick="makePayment()">Make Payment</button>
+        </div>
+
+        <div id="tax-records" style="display:none;">
+            <h2>Your Tax Records</h2>
+            <ul id="records-list"></ul>
+        </div>
+
+        <div id="payment-history" style="display:none;">
+            <h2>Your Payment History</h2>
+            <ul id="payments-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

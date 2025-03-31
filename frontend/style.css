@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.subtitle {
+    text-align: center;
+    color: #3498db;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Tax info box styling */
+.info-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.info-box p {
+    text-align: left;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+.info-box ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.info-box li {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 4px;
+    border-left: 3px solid #28a745;
+}
+
+/* Currency amount styling */
+.amount {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.rupee {
+    font-family: Arial, sans-serif;
+    color: #16a085;
+}
+
+/* Due amount styling */
+.amount-due {
+    font-weight: bold;
+    color: #e74c3c; /* Red color for amounts due */
+}
+
+/* Status indicators */
+.status-paid {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.status-partially_paid {
+    color: #3498db;
+    font-weight: bold;
+}
